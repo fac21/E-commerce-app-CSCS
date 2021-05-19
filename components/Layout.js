@@ -1,8 +1,10 @@
 import Head from "next/head";
+import Header from "./Header";
 
 export default function Layout() {
-    return (
-        <Head>
+  return (
+    <>
+      <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>Designer Donuts</title>
         <meta
@@ -10,5 +12,7 @@ export default function Layout() {
           content="Buy designer donuts here and stuff your greedy face"
         />
       </Head>
-    )
+      <Header />
+    </>
+  );
 }
