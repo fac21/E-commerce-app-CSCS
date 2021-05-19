@@ -1,12 +1,18 @@
-import Head from "next/head";
+
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import db from "../database/connection";
 import Donuts from "../components/Donuts"
+import Header from "../components/Header"
+import Layout from "../components/Layout"
 
 export default function Index({ data }) {
   return (
+    <>
+    <Layout />
+    <Header />
     <Donuts data={data}/>
+    </>
   )
 }
 
