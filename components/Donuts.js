@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function Donuts({ data }) {
-  const basket = {};
+export default function Donuts({ data, basket }) {
   function addDonut(event) {
     let donutName = event.target.className;
     basket[donutName] ? basket[donutName]++ : (basket[donutName] = 1);

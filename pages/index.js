@@ -5,10 +5,12 @@ import Donuts from "../components/Donuts";
 import Layout from "../components/Layout";
 
 export default function Index({ data }) {
+  const basket = {};
+
   return (
     <>
       <Layout />
-      <Donuts data={data} />
+      <Donuts data={data} basket={basket} />
     </>
   );
 }
