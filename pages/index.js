@@ -17,10 +17,17 @@ export default function Index({ data }) {
   return (
     <>
       <Layout />
+
+
+      <div className="basket__container">
+        <h2 className="basket__title">Basket </h2>
+        <i className="fas fa-shopping-basket"></i>
+        <Basket basket={basket} data={data} />
+        <button>Check out</button>
+      </div>
       <div className="donuts__container">
       < Donuts data={data} basket={basket} addToBasket={addToBasket} />
        </div>
-      <Basket basket={basket} data={data}/>
     </>
   );
 }

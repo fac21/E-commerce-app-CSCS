@@ -14,6 +14,10 @@ export default function Layout() {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:wght@300;400;500;700&display=swap');
 </style> 
+        <script
+          src="https://kit.fontawesome.com/1c7f57191b.js"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
       <Header />
     </>

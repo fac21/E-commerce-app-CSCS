@@ -1,14 +1,24 @@
 export default function Basket({ basket, data }) {
   console.log("basket page", basket);
-  const basketArray = []
+  const basketArray = [];
+  let sum = 0;
+
   for (const donut in basket) {
     if (basket[donut] > 0) {
-      basketArray.push((<div><h1>{donut}</h1><p>{basket[donut]}</p></div>))
+      sum += basket[donut];
+
+      basketArray.push(
+        <div>
+          <p>
+            {donut} <span>{basket[donut]}</span>
+          </p>
+        </div>
+      );
     }
   }
   return (
     <>
-      {basketArray}
+      {basketArray} <h3>Total items {sum} </h3>
     </>
   );
 }
