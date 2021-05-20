@@ -9,12 +9,18 @@ import Basket from "../components/Basket";
 // const basket = {};
 
 export default function Index({ data }) {
-
+  const [basket, addToBasket] = React.useState({
+    "Burberry Muffin": 0,
+    "Dolce and Banana": 0,
+    "Choco Chanel": 0,
+    "Donutella Versace": 0,
+    "Giorgio Almondi": 0,
+  });
   return (
     <>
       <Layout />
       <Donuts data={data} basket={basket} addToBasket={addToBasket} />
-      <Basket basket={basket} />
+      <Basket basket={basket} data={data}/>
     </>
   );
 }
