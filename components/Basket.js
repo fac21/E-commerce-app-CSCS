@@ -1,5 +1,4 @@
 export default function Basket({ basket, data }) {
-  console.log("basket page", basket);
   const basketArray = [];
   let sum = 0;
 

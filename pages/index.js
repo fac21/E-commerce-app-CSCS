@@ -13,12 +13,11 @@ export default function Index({ data }) {
     "Choco Chanel": 0,
     "Donutella Versace": 0,
     "Giorgio Almondi": 0,
+    "Chewy Vuitton": 0,
   });
   return (
     <>
       <Layout />
-
-
       <div className="basket__container">
         <h2 className="basket__title">Basket </h2>
         <i className="fas fa-shopping-basket"></i>
@@ -26,8 +25,8 @@ export default function Index({ data }) {
         <button>Check out</button>
       </div>
       <div className="donuts__container">
-      < Donuts data={data} basket={basket} addToBasket={addToBasket} />
-       </div>
+        <Donuts data={data} basket={basket} addToBasket={addToBasket} />
+      </div>
     </>
   );
 }
