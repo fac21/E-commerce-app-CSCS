@@ -5,7 +5,7 @@ export default function Header() {
     <>
       <header>
         <section className="main__header">
-          <img src="public/logo.png" alt="LOGO" />
+          <img className="logo" src="logo.png" alt="LOGO" />
           <form>
             <label
               className="search-label"

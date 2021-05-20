@@ -23,6 +23,10 @@ body {
   text-align: center;
 }
 
+.logo {
+  height: 110px;
+}
+
 .search__bar {
   background-color: #f2cc8f;
   display: flex;
