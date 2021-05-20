@@ -6,8 +6,6 @@ import Donuts from "../components/Donuts";
 import Layout from "../components/Layout";
 import Basket from "../components/Basket";
 
-// const basket = {};
-
 export default function Index({ data }) {
   const [basket, addToBasket] = React.useState({
     "Burberry Muffin": 0,
@@ -19,7 +17,7 @@ export default function Index({ data }) {
   return (
     <>
       <Layout />
-      <div className="test_name">
+      <div className="donuts__container">
       < Donuts data={data} basket={basket} addToBasket={addToBasket} />
        </div>
       <Basket basket={basket} data={data}/>

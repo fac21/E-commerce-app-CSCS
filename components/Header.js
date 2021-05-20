@@ -3,16 +3,16 @@ import styles from "./index.module.css";
 export default function Header() {
   return (
     <>
-      <header className={styles.topnav}>
-        <section className={styles.topnav__section}>
-          <img src="" alt="LOGO" />
+      <header>
+        <section className="main__header">
+          <img src="public/logo.png" alt="LOGO" />
           <form>
             <label
               className="search-label"
               for="search"
               aria-labelledby="searchTitle"
             >
-              <img src="" alt="Magnifier" />
+              {/* <img src="" alt="" /> */}
             </label>
             <input
               id="search"
@@ -22,18 +22,15 @@ export default function Header() {
             <input className="button" type="button" value="Search" />
           </form>
 
-          <ul className="topnav__list">
-            <li>LOG IN</li>
-            <li>SIGN UP </li>
-          </ul>
+          <div className="topnav__list">
+            <div>LOG IN / SIGN UP</div>
+          </div>
           <img src="" alt="BASKET" />
         </section>
-        <section>
-          <ul>
-            <li>Vegan</li>
-            <li>Min Price</li>
-            <li>Max Price</li>
-          </ul>
+        <section className="search__bar">
+            <div>Vegan</div>
+            <div>Min Price</div>
+            <div>Max Price</div>
           <hr></hr>
         </section>
       </header>

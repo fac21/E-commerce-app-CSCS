@@ -1,5 +1,8 @@
 body {
+  margin: 0;
+  background-color: #f4f1de;
   padding: 10px 10px 10px 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -8,22 +11,60 @@ body {
   }
 }
 
+.main__header {
+  display: flex;
+  background-color: #81b29a;
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+
+.main__header * {
+  margin: auto;
+  text-align: center;
+}
+
+.search__bar {
+  background-color: #f2cc8f;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.search__bar * {
+  margin: auto;
+  text-align: center;
+}
+
 .donuts__container {
-  display: grid;
-  background-color: hotpink;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  /* grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); */
-  grid-gap: 5rem;
-  width: 200px;
-  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eachDonut {
+  background-color: #f4f1de;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  font-size: 1.2rem;
+}
+
+.donut__name {
+  font-size: 1.8rem;
+  font-family: 'Pattaya', sans-serif;
 }
 
 .donut__image {
   width: 300px;
   height: 300px;
-  border-radius: 50px;
-  border: 2px solid black;
+  object-fit: cover;
+}
+
+.donut__description {
+  max-width: 250px;
+  line-height: 1.2rem;
+  text-align: center;
 }
 
 * {
