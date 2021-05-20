@@ -10,7 +10,9 @@ export default function Index({ data }) {
   return (
     <>
       <Layout />
-      <Donuts data={data} basket={basket} />
+      <div className="test_name">
+        <Donuts data={data} basket={basket} />
+      </div>
     </>
   );
 }
