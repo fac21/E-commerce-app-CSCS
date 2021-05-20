@@ -1,6 +1,6 @@
 BEGIN;
 
-DROP TABLE IF EXISTS products, userbasket CASCADE;
+DROP TABLE IF EXISTS users, sessions, products, userbasket CASCADE;
 
 SET timezone = 'Europe/London';
 
