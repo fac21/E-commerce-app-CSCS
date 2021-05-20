@@ -14,20 +14,15 @@ export default function Donuts({ data, basket, addToBasket }) {
 
   const donutArray = data.map((donut) => {
     return (
-      <section>
-        <ul>
-          <li>Vegan</li>
-          <li>Min Price</li>
-          <li>Max Price</li>
-        </ul>
-        <hr></hr>
-
+      <section className="donuts">
         <div key={donut.id}>
-          <h1 className="donut__name">{donut.name}</h1>
+          <h1 className="donuts">{donut.name}</h1>
           <img
             className="donut__image"
             src={donut.image}
             alt={"picture of " + donut.name + " donut"}
+            width="500px"
+            height="500px"
           />
           <p className="donut__description">{donut.description}</p>
           <p className="donut__price">£{donut.price.toFixed(2)}</p>

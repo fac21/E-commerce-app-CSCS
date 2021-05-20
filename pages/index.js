@@ -19,7 +19,9 @@ export default function Index({ data }) {
   return (
     <>
       <Layout />
-      <Donuts data={data} basket={basket} addToBasket={addToBasket} />
+      <div className="test_name">
+      < Donuts data={data} basket={basket} addToBasket={addToBasket} />
+       </div>
       <Basket basket={basket} data={data}/>
     </>
   );

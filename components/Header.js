@@ -6,7 +6,6 @@ export default function Header() {
       <header className={styles.topnav}>
         <section className={styles.topnav__section}>
           <img src="" alt="LOGO" />
-
           <form>
             <label
               className="search-label"
@@ -28,6 +27,14 @@ export default function Header() {
             <li>SIGN UP </li>
           </ul>
           <img src="" alt="BASKET" />
+        </section>
+        <section>
+          <ul>
+            <li>Vegan</li>
+            <li>Min Price</li>
+            <li>Max Price</li>
+          </ul>
+          <hr></hr>
         </section>
       </header>
     </>
