@@ -1,16 +1,16 @@
 import Image from "next/image";
-import styles from "../components/layout.module.css";
+// import styles from "../components/index.module.css";
 import db from "../database/connection";
 import Donuts from "../components/Donuts";
-import Header from "../components/Header";
 import Layout from "../components/Layout";
 
 export default function Index({ data }) {
+  const basket = {};
+
   return (
     <>
       <Layout />
-      <Header />
-      <Donuts data={data} />
+      <Donuts data={data} basket={basket} />
     </>
   );
 }
