@@ -11,6 +11,10 @@ export default function Layout() {
           name="description"
           content="Buy designer donuts here and stuff your greedy face"
         />
+        <script
+          src="https://kit.fontawesome.com/1c7f57191b.js"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
       <Header />
     </>
