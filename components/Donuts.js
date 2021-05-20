@@ -1,10 +1,15 @@
 import React from "react";
 
-export default function Donuts({ data, basket }) {
+export default function Donuts({ data, basket, addToBasket }) {
   function addDonut(event) {
     let donutName = event.target.className;
-    basket[donutName] ? basket[donutName]++ : (basket[donutName] = 1);
-    console.log(basket);
+    addToBasket((currentBasket) => updateBasket(currentBasket, donutName));
+  }
+
+  function updateBasket(currentBasket, key) {
+    let update = Object.assign({}, currentBasket);
+    update[key] += 1;
+    return update;
   }
 
   const donutArray = data.map((donut) => {
