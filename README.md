@@ -1,5 +1,22 @@
+## This week you’ll be building an e-commerce shopping site for a fake brand. It doesn’t need to actually take payments or have a checkout, but it should have product listings and the ability to add items to a shopping basket.
+
 <img width="994" alt="Screenshot 2021-05-21 at 11 51 37" src="https://user-images.githubusercontent.com/64862888/119126520-04b0fc80-ba2b-11eb-90eb-58e7d602587c.png">
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Acceptance criteria 
+Server-rendered with Next.js ✔️
+Hosted on Vercel  ✔️
+Data stored in AWS Postgres  ✔️
+Homepage with product listings  ✔️
+Individual product pages, containing:
+Quantity/colour/variant pickers
+“Add to basket” button  ✔️
+Basket page showing all items being purchased  ✔️
+Basket contents saved for future visits
+
+## Stretch criteria 
+Filter products by category
+Sort products by price
+“Featured” products on homepage 
 
 ## Getting Started
 
