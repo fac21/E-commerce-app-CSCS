@@ -3,20 +3,19 @@
 <img width="994" alt="Screenshot 2021-05-21 at 11 51 37" src="https://user-images.githubusercontent.com/64862888/119126520-04b0fc80-ba2b-11eb-90eb-58e7d602587c.png">
 
 ## Acceptance criteria 
-Server-rendered with Next.js ✔️
-Hosted on Vercel  ✔️
-Data stored in AWS Postgres  ✔️
-Homepage with product listings  ✔️
-Individual product pages, containing:
-Quantity/colour/variant pickers
-“Add to basket” button  ✔️
-Basket page showing all items being purchased  ✔️
-Basket contents saved for future visits
+- Server-rendered with Next.js ✔️
+- Hosted on Vercel  ✔️
+- Data stored in AWS Postgres  ✔️
+- Homepage with product listings  ✔️
+- Individual product pages, containing: Quantity/colour/variant pickers ❎
+- “Add to basket” button  ✔️
+- Basket page showing all items being purchased  ❎
+- Basket contents saved for future visits  ❎
 
 ## Stretch criteria 
-Filter products by category
-Sort products by price
-“Featured” products on homepage 
+- Filter products by category  ❎
+- Sort products by price  ❎
+- “Featured” products on homepage  ❎
 
 ## Getting Started
 
