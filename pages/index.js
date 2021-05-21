@@ -4,7 +4,6 @@ import React from "react";
 import db from "../database/connection";
 import Donuts from "../components/Donuts";
 import Layout from "../components/Layout";
-import Basket from "../components/Basket";
 
 export default function Index({ data }) {
   const [basket, addToBasket] = React.useState({
@@ -17,13 +16,7 @@ export default function Index({ data }) {
   });
   return (
     <>
-      <Layout />
-      <div className="basket__container">
-        <h2 className="basket__title">Basket </h2>
-        <i className="fas fa-shopping-basket"></i>
-        <Basket basket={basket} data={data} />
-        <button>Check out</button>
-      </div>
+      <Layout basket={basket} addToBasket={addToBasket} />
       <div className="donuts__container">
         <Donuts data={data} basket={basket} addToBasket={addToBasket} />
       </div>

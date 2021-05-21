@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
+import Basket from "./Basket";
 
-export default function Header() {
+export default function Header({ basket, addToBasket }) {
   return (
     <>
       <header>
@@ -28,9 +29,15 @@ export default function Header() {
           <img src="" alt="BASKET" />
         </section>
         <section className="search__bar">
-            <div>Vegan</div>
-            <div>Min Price</div>
-            <div>Max Price</div>
+          <div>Vegan</div>
+          <div>Min Price</div>
+          <div>Max Price</div>
+          <div className="basket__container">
+            <h2 className="basket__title">Basket </h2>
+            <i className="fas fa-shopping-basket"></i>
+            <Basket basket={basket} />
+            <button>Check out</button>
+          </div>
           <hr></hr>
         </section>
       </header>
