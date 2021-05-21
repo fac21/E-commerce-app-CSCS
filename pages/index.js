@@ -5,15 +5,7 @@ import db from "../database/connection";
 import Donuts from "../components/Donuts";
 import Layout from "../components/Layout";
 
-export default function Index({ data }) {
-  const [basket, addToBasket] = React.useState({
-    "Burberry Muffin": 0,
-    "Dolce and Banana": 0,
-    "Choco Chanel": 0,
-    "Donutella Versace": 0,
-    "Giorgio Almondi": 0,
-    "Chewy Vuitton": 0,
-  });
+export default function Index({ data, basket, addToBasket }) {
   return (
     <>
       <Layout basket={basket} addToBasket={addToBasket} />
